@@ -7,7 +7,7 @@
 
 
 //regular codes
-1. git status (compare online code with local code)
+1. git status (compare online code with local code) [optional command]
 2. git add . (to add all the files and folder)
 3. git commit -m "<commit message>"
 4. git push
