@@ -1,0 +1,106 @@
+Day 2: [Mangsir 18, 2080]
+Homework:
+    Research on relative vs absolute path
+
+Day 3:
+/index.html or index.html is not the right approach
+./ is the right approach to write the pathing also works with react
+./ points to the parent folder
+../points to the parent of the parent
+../../ go even one level higher and so on
+&nbsp; -> non-breaking space (a space that will not break into a new line)
+ctrl + space for getting suggestion in pathing or '/' or './' as well as in other scenario
+ctrl + click in a hyperlink will open the link in the new tab even if target is not set to '_blank'
+
+
+Day 4:
+    Normally there should only be one h1 in one html page
+    also it is not a good practice to write h3 before h2 for seo related issues
+    changing code means refractoring it
+    ctrl + enter to directly go to the next line 
+    alt + shift + down arrow to copy down the selected parent
+    alt + down or up arrow to move line down and up respectively
+    fn + f2 to change the name of the tag directly
+    ctrl + b to close the side bar or open the side bar
+    ctrl + x, end key
+    block element takes space more than required space or a whole line in other words eg: h1, p etc
+    inline element takes only the required space eg: anchor tag, img tag etc
+
+    we learnt about list and table today
+
+    homework:
+        make a table given by sagar dai✅
+        hint: concept that will be used is rowspan and colspan
+
+Day 5:
+    There are three ways you can add css:
+        a. inline css(using style attribute)
+        b. internal css(using style tag)
+        c. external css(using css file and linking with the html file)
+        alt stands for alternative text
+        css debugging is finding out where the css is coming from by going to inspect
+    homework:
+        research margin and padding also complete the given table design
+
+Day 5:
+    types of elements:
+        i.block elements eg: p, heading tags
+        ii. inline elements eg: anchor tag, image element, span
+        iii. inline-block elements
+    semantic tag helps to recognize code without seeing the actual code as they signify the meaning by themselves
+    There are various types of selectors namely: 
+                                    element, id, class, combination of selectors
+    when children is being target using parent for applying css, it is called descendant selectors 
+        it is achieved using by using space betweent two tags 
+                example: header ul li, nav ul etc...
+        Note: we prefer CLASS in css in the place of ID normally...
+        because class is reusable also a single element can have any number of classes or be part of any number of classes
+        kebab-case naming convention: lowercase letters separate by hypen for words
+
+       Note: block element shouldn't be inside inline element
+       use span tag to style the portion of an element
+       homework: 
+                do the design given
+
+Day 6: 
+    windows + v to view and use all the latest copied text on the clipboard
+    ctrl + p to get a search bar for files in vs code
+    css overwriting concepts 
+
+Day 7:
+    External css to employ the principle of DRY(Do Not Repeat)
+    External css can be used multiple times as it can be reused simple by linking to the given page
+    if there is a common design across multiple files/pages external css is used
+    and internal css for unique design within the page
+    alt + shift + I for multi-cursor and use home and end key to control
+    homework: 
+        find the difference between rem and em 
+        find out why we use box-sizing: border-box;
+        universal selectors
+
+    percentage, rem and em are relative units of measurement...
+    percentage and em are relative to the font-size of the parent element in which font-size is defined
+    while rem is relative to the root font size i.e 16px by default
+    :root selector to select the highest level parent i.e html here you can change the font-size of the root
+    box-sizing: border-box includes padding and border in the specified height and width of the element
+    while the default value of box-sizing is 'content-box' in which the height and width applied is only applicable to the content excluding padding and border
+    short-cuts: ctrl + shift + c to open inspect
+            similarly ctrl + shift + j to close inspect, this same short cut also directly opens console
+
+Day 8:
+    Lorem picsum for pictures
+    mydevice.io for finding device resolution
+    we use vh but not vw instead we use % because vw normally create a horizontal scroll problem
+    ipconfig in terminal to open in mobile brower ip:..../units.html
+    a.active(class) anchor tag in which there is a active class, there is no space. This type of selector is also called and selector
+    color: hex value, rgb value, rgba for opacity too etc
+    tomorrow's topic : git`
+
+Day 9: 
+    dir - to list directories
+    md - mark down (extension)
+    cd - to change directory
+    cls - to clear
+
+    
+    

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      th,
+      td {
+        border: 1px solid black;
+      }
+      .heading {
+        /* writing-mode: vertical-lr; */
+        transform: rotate(270deg);
+      }
+    </style>
+  </head>
+  <body>
+    <a href="./index.html">Home</a>
+    <table>
+      <tr>
+        <th></th>
+        <th>Courses</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <th rowspan="3" class="heading">Current</th>
+        <td>Mern</td>
+        <td>10000</td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>11000</td>
+      </tr>
+      <tr>
+        <td>QA</td>
+        <td>12000</td>
+      </tr>
+      <tr>
+        <th rowspan="4" class="heading">Upcoming</th>
+        <td>Digital Marketing</td>
+        <td>11000</td>
+      </tr>
+      <tr>
+        <td>Graphics Design</td>
+        <td>10000</td>
+      </tr>
+      <tr>
+        <td>Data science</td>
+        <td>13000</td>
+      </tr>
+      <tr>
+        <td>UI/UX Design</td>
+        <td>11000</td>
+      </tr>
+    </table>
+  </body>
+</html>

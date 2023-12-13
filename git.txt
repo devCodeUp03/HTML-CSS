@@ -1,0 +1,10 @@
+// initial setup for each project
+1. git init (for git initilization)
+2. git remote add origin <url you of your repository>     Note: this commands are case sensative
+2.1 to cheak whether step 2 is working or not
+    git remote -v
+
+
+//regular codes
+1. git status (compare online code with local code)
+2. git add . 
