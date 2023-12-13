@@ -1,6 +1,6 @@
 // initial setup for each project
 1. git init (for git initilization)
-2. git remote add origin <url of your repository>     Note: this commands are case sensative
+2. git remote add origin <url of your repository>     Note: these commands are case sensative
     to change >git remote set-url origin https://github.com/sagartmg2/mangsir-2(repository's url)
 2.1 to check whether step 2 is working or not
     git remote -v
@@ -8,6 +8,24 @@
 
 //regular codes
 1. git status (compare online code with local code) [optional command]
-2. git add . (to add all the files and folder)
+2. git add . (to add all the files and folder to the staging area)
+2.1 git add <file-name> - to add a single file to the staging area
 3. git commit -m "<commit message>"
-4. git push
+4. git push(-u origin master) - we can use -u flag instead of --set-upstream -> this is used to make sure we don't have to repeat origin master all the time
+5. git commit -a -m "<commit message>" - to directly commit all the files without going through a staging area
+
+
+//branches
+1. git branch - to view different branches
+2. git checkout <name-of-the-branch> - to switch branch
+3. git checkout -b <branch-name> - to create a new branch
+4. git branch -d <branch-name> - to delete the branch
+5. git branch -M <new-name> - tp rename the branch
+
+//merge
+1. git diff <branch-name> - to check difference with the branch
+2. git merge <branch-name> - to merge one branch with another
+
+
+//clone
+1. git clone <url-of-the-repo> - to copy the given repo to the local computer/machine
