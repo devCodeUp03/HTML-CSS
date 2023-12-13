@@ -35,4 +35,4 @@
 1. git config --global user.name "<name>" - to set name
 2. git config --global user.email "<email>" - to set email
 3. git config user.name - to see set name
-4. git config user.email - tp see set email
+4. git config user.email - to see set email
