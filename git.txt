@@ -29,6 +29,7 @@
 
 //clone
 1. git clone <url-of-the-repo> - to copy the given repo to the local computer/machine
+2. git pull - to pull only the changes in the cloned file
 
 
 //Configuration
@@ -36,3 +37,16 @@
 2. git config --global user.email "<email>" - to set email
 3. git config user.name - to see set name
 4. git config user.email - to see set email
+
+
+//
+ctrl + c - to end the process
+//for making sure you are able to pull
+git restore . - to restore the changes
+git clean -f -d -> to delete new files 
+
+
+term - merge conflict
+
+// for open source contribution
+1. fork 2. clone 3. do some changes in the code 4. commit and push 5. do pull request
