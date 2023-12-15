@@ -98,9 +98,12 @@ Day 8:
 
 Day 9: 
     dir - to list directories
-    md - mark down (extension)
+    .md - mark down (extension)
     cd - to change directory
     cls - to clear
+Day 10: 
+    read more about git and github
+    read about cloning, forking etc
 
     
     
