@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figma-Design</title>
+    <style>
+        *{
+            list-style: none;
+        }
+        .flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .parent {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .parent ul{
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            width: 500px;
+        }
+        img {
+            height: 50px;
+        }
+        .second-flex{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="parent-container">
+      <nav class="parent">
+        <div class="second-flex"><img src="./figma.png" alt="" />LaslesVPN</div>
+        <ul class="flex">
+          <li>About</li>
+          <li>Features</li>
+          <li>Pricing</li>
+          <li>Testimonials</li>
+          <li>Help</li>
+        </ul>
+        <div>Sign In <button style="margin-left: 1rem; border: 1px solid red;">Sign Up</button></div>
+      </nav>
+    </div>
+  </body>
+</html>

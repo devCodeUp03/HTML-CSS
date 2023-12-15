@@ -105,5 +105,20 @@ Day 10:
     read more about git and github
     read about cloning, forking etc
 
+Day 11:
+    flexbox
+    gap property - to create gap between children elements
+    display - flex and grid are used to utilize the space present in parent container
+    There are two axis in flex - namely main-axis and cross-axis
+    justify-content is used to move children in main-axis.
+    space-between is widely used
+
+    parent is called flexbox and children are called flex items.
+    (widely used: flex-start, center, end, space-between)
+
+    for cross-axis: align-items are used (widely used values are: start, end and center)
     
-    
+    homework: 
+       for parent: flex-direction, flex-wrap
+       for children: flex-grow, order
+       bootstrap container class 

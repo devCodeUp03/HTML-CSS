@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .parent{
+            border: 1px solid black;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .child {
+            border: 1px solid black;
+            height: 40px;
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <!-- emmet shortcut -> .child*3>{child-$} -->
+        <div class="child one">child-1</div>
+        <div class="child two">child-2</div>
+        <div class="child three">child-3</div>
+    </div>
+</body>
+</html>
