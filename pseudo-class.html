@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>PseudoClass</title>
+    <style>
+        .child{
+            border: 1px solid;
+            height: 20px;
+            width: 50%;
+
+        }
+
+      /* .parent .fifth{
+        background-color: red;
+      } */
+
+    /* .parent div.fifth{
+        background-color: red;
+    } */
+
+    /* and selector: look for the unique thing */
+    /* .child.fifth{
+        background-color: red;
+    } */
+
+
+    header div:first-child{
+        background-color: red;
+    }
+    div.child:nth-child(3){
+        background-color: green;
+    }
+    </style>
+</head>
+<body>
+    <header class="parent">
+            <!-- <p>child 0</p> -->
+            <div class="child">child-1</div>
+            <div class="child">child-2</div>
+            <p>child intermediate</p>
+            <div class="child">child-3</div>
+            <div class="child">child-4</div>
+            <div class="child fifth">child-5</div>
+    </header>
+
+    <div class="parent">
+        <p>para-1</p>
+        <p>para-1</p>
+        <p>para-1</p>
+        <p>para-1</p>
+        <p class="fifth">para-1</p>
+    </div>
+
+    <ul>
+        <li>hover</li>
+        <li>focus</li>
+        <li>before</li>
+        <li>after</li>
+        <li>active</li>
+    </ul>
+</body>
+</html>

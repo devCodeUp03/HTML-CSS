@@ -122,3 +122,18 @@ Day 11:
        for parent: flex-direction, flex-wrap
        for children: flex-grow, order
        bootstrap container class 
+
+
+Day 12: 
+    no class
+
+Day 13:
+    overflow: hidden property in flexbox
+    flex-wrap: is used to wrap the flex items in the flexbox
+    by default children are stretched in flexbox
+    when there is multiple row of children, note: we can use align-content(however this property in now really used so much)->flex-wrap works side-by-side
+    how selectors work, what happens when there is space between selectors and what happens otherwise and so on
+    eg: p.child(paragraph tag which contains child class) vs p .child(paragraph inside which child has a class of "child")
+    Look for the unique thing for selection or selector
+    
+    
