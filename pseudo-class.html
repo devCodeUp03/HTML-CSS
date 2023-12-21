@@ -26,11 +26,39 @@
     } */
 
 
-    header div:first-child{
+    /* header div:first-child{
         background-color: red;
     }
     div.child:nth-child(3){
         background-color: green;
+    } */
+/* 
+    div.child:nth-child(3), .parent p:nth-child(4){
+        background-color: red;
+    } */
+
+    button:active {
+        font-size: 40px;
+    }
+
+    button:focus {
+        color: blueviolet; 
+    }
+
+    /* div.child:first-child:focus{
+        color: blueviolet;
+    } */
+
+    /* .parent .fifth:focus {
+        color: blueviolet;
+    } */
+    ul :first-child:before{
+        content: '\2713';
+        margin-right: 2rem;
+    }
+
+    .parent div:nth-child(3){
+        background-color: red;
     }
     </style>
 </head>
@@ -39,7 +67,7 @@
             <!-- <p>child 0</p> -->
             <div class="child">child-1</div>
             <div class="child">child-2</div>
-            <p>child intermediate</p>
+            <p>Hello World!</p>
             <div class="child">child-3</div>
             <div class="child">child-4</div>
             <div class="child fifth">child-5</div>
@@ -50,15 +78,17 @@
         <p>para-1</p>
         <p>para-1</p>
         <p>para-1</p>
-        <p class="fifth">para-1</p>
+        <p class="">para-1</p>
     </div>
 
     <ul>
-        <li>hover</li>
-        <li>focus</li>
-        <li>before</li>
-        <li>after</li>
-        <li>active</li>
+        <li>:hover -> on taking the cursor above any  element -> focus can last for some time</li>
+        <li>:focus -> it is accepted by the element that take keyboard inputs or other user inputs: for eg; input</li>
+        <li>::before -> before pseudo element is used to insert content before the content of an element</li>
+        <li>::after -> it used used to insert content after the content of an element</li>
+        <li>active -> active is temporary</li>
     </ul>
+    <button>Hello World!</button>
+    <a href="#">A Burning Desire</a>
 </body>
 </html>

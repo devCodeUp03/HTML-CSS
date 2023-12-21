@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css-Position</title>
+    <style>
+
+      li {
+        list-style: none;
+      }
+      /* .Static {
+        position: Static;
+      }
+       .Relative {
+        position: Relative;
+      } */
+
+      .Absolute {
+        position: Absolute;
+        background-color: red;
+        left: 200px;
+        bottom: 0px;
+      }
+      /* .Fixed {
+        position: Fixed;
+      }
+      .Sticky {
+        position: Sticky;
+       } */
+
+      .box {
+        height: 100px;
+        width:100px;
+        border: 1px solid black;
+
+
+      }
+
+      .card {
+        height: 100px;
+        width: 200px;
+        border: 1px solid black;
+        margin-left: auto;
+        margin-right: auto
+      }
+    </style>
+  </head>
+  <body>
+    <ul style="height: 130vh;">
+      <li class="box Static">Static</li>
+      <li class="box Relative">Relative</li>
+      <li class="box Absolute">Absolute</li>
+      <li class="box Fixed">Fixed</li>
+      <li class="box Sticky">Sticky</li>
+      <li class="card"></li>
+    </ul>
+  </body>
+</html>

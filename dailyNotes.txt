@@ -135,5 +135,47 @@ Day 13:
     how selectors work, what happens when there is space between selectors and what happens otherwise and so on
     eg: p.child(paragraph tag which contains child class) vs p .child(paragraph inside which child has a class of "child")
     Look for the unique thing for selection or selector
+
+Day 14:
+    pseudo-class and pseudo-element(it is called element because it adds the new content or element like altogether)
+    css position property:
+        1.static
+        2.relative
+        3.absolute
+        4.fixed
+        5.sticky
+
+    short cut: shift+alt + i, ctrl + left-right to move across the words
+
+Day 15:
+    positioning
+    1.relative (element can be moved relative to it's original position)
+    2.absolute (element moves relative to it's nearest non-static parent)
+    3.fixed is like absolute but remains fixed in it's position(it is relative to hmtl/screen)
+    4.Sticky is like fixed but to make it work we need to tell the element when to stop by adding some properties like top, bottom etc
+    
+    universal selector(*)
+    margin-left and right auto to center the element
+    firefox browser for mobile responsive
+    box-sizing: border-box
+    margin can also be given negative values but not in case of padding
+    overflow: hidden(remember this property for good)
+    fixed doesn't remain under the relative parent
+    absolute remains under the all parent's except from the parent that is static
+    line-height property 
+    iconmonstr for icons
+    appearance: none
+    .container utility class
+
+Day 16:
+    when a flex-item is given position of absolute, it stops function as a flex-item
+    when we position an element of sticky, it looks for the parent but does not care the position of the parent
+    sticky property also asks for top property
+
+    sans-serif(content)
+    serfif fonts(title)
+    z-index -> is used to compare between siblings
+    different fonts from google fonts
+
     
     

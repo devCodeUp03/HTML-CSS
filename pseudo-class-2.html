@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoClass</title>
+
+    <style>
+        .child {
+            height: 50px;
+            width: 50px;
+            border: 1px solid;
+        }
+        .parent :nth-child(2n){ 
+            background-color: red;
+        }
+        /* Every second element */
+
+
+        header ul{
+            display: flex;
+            list-style-type: none;
+            padding-left: 0;
+            gap: 2rem;
+        }
+
+        header ul li:hover {
+            cursor: pointer;
+            color: red;
+        }
+
+        label.star::after {
+            content: '*';
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <ul>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+        </ul>
+    </header>
+    <!-- <div class="parent">
+        <div class="child">child-1</div>
+        <div class="child">child-2</div>
+        <div class="child">child-3</div>
+        <div class="child">child-4</div>
+        <div class="child">child-5</div>
+    </div> -->
+
+    <form action="">
+        <label for="name" class="star">Name</label>:
+        <input type="text" id="name">
+        <label for="pass" class="star">
+            Password
+        </label>:
+        <input type="password" id="pass">
+        <label for="phone">Phone</label>:
+        <input type="phone" id="phone">
+        <button>Submit</button>
+    </form>
+
+
+
+</body>
+</html>
