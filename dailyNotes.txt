@@ -7,7 +7,7 @@ Day 3:
 ./ is the right approach to write the pathing also works with react
 ./ points to the parent folder
 ../points to the parent of the parent
-../../ go even one level higher and so on
+../../ goes even one level higher and so on
 &nbsp; -> non-breaking space (a space that will not break into a new line)
 ctrl + space for getting suggestion in pathing or '/' or './' as well as in other scenario
 ctrl + click in a hyperlink will open the link in the new tab even if target is not set to '_blank'
@@ -17,19 +17,20 @@ Day 4:
     Normally there should only be one h1 in one html page
     also it is not a good practice to write h3 before h2 for seo related issues
     changing code means refractoring it
-    ctrl + enter to directly go to the next line 
-    alt + shift + down arrow to copy down the selected parent
+    ctrl + enter to directly go to the next line
+    alt + shift + down arrow to copy down the selected line of code/text
     alt + down or up arrow to move line down and up respectively
-    fn + f2 to change the name of the tag directly
+    fn + f2 to change the name of the tag directly(opening and closing tag)
     ctrl + b to close the side bar or open the side bar
     ctrl + x, end key
     block element takes space more than required space or a whole line in other words eg: h1, p etc
     inline element takes only the required space eg: anchor tag, img tag etc
 
+
     we learnt about list and table today
 
     homework:
-        make a table given by sagar dai✅
+        make a table given by sagar sir
         hint: concept that will be used is rowspan and colspan
 
 Day 5:
@@ -168,7 +169,7 @@ Day 15:
     .container utility class
 
 Day 16:
-    when a flex-item is given position of absolute, it stops function as a flex-item
+    when a flex-item is given position of absolute, it stops to function as a flex-item
     when we position an element of sticky, it looks for the parent but does not care the position of the parent
     sticky property also asks for top property
 
@@ -176,6 +177,22 @@ Day 16:
     serfif fonts(title)
     z-index -> is used to compare between siblings
     different fonts from google fonts
+
+Day 17:
+    media queries
+    zoom in and out feature in firefox ctrl +/-
+    in mobile first approach, your code is less is some sense
+
+
+Day 18:
+    saturday
+
+Day 19:
+    Sir tonsil
+
+Day 20: 
+    
+
 
     
     
