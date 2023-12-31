@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            position: relative;
+            height: 100vh;
+
+        }
+        div{
+            height: 100px;
+            width: 100px;
+            /* margin: 0 auto; */
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: transform 5s linear 1s;
+            display: none;
+        
+
+            /* transform: scale(2) */
+        }
+
+        button{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 50px;
+            width: 100px;
+            border-radius: 10px;
+            border: none;
+            background-color: aqua;
+            transition: background-color, color 2s ease-in-out;
+        }
+
+        div:hover {
+            transform: scale(2);
+            background-color: red;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: blue;
+            color: white;
+            /* font-size: 100px; */
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        Hello, World!
+    </div>
+
+    <button>Click on</button>
+</body>
+</html>

@@ -66,14 +66,14 @@ Day 5:
 Day 6: 
     windows + v to view and use all the latest copied text on the clipboard
     ctrl + p to get a search bar for files in vs code
-    css overwriting concepts 
+    css overriding concepts 
 
 Day 7:
     External css to employ the principle of DRY(Do Not Repeat)
     External css can be used multiple times as it can be reused simple by linking to the given page
     if there is a common design across multiple files/pages external css is used
     and internal css for unique design within the page
-    alt + shift + I for multi-cursor and use home and end key to control
+    alt + shift + I for multi-cursor in selected lines and use home and end key to control
     homework: 
         find the difference between rem and em 
         find out why we use box-sizing: border-box;
@@ -175,13 +175,13 @@ Day 16:
 
     sans-serif(content)
     serfif fonts(title)
-    z-index -> is used to compare between siblings
+    z-index -> is used to compare between siblings and the property is applied
     different fonts from google fonts
 
 Day 17:
     media queries
     zoom in and out feature in firefox ctrl +/-
-    in mobile first approach, your code is less is some sense
+    in mobile first approach, your code is less in some sense
 
 
 Day 18:
@@ -193,6 +193,36 @@ Day 19:
 Day 20: 
     Monday
 
+Day 22:
+for .container class values while using tailwind breakpoints
+// convert them to proper css
+min-width:1536px then .container max-width = 1458px
+min-width:1280px then .container max-width = 1216px
+min-width:1024px then .container max-width = 990px
+min-width:768px then .container max-width = 720px
+min-width:640px then .container max-width = 600px
+
+
+.container class in bootstrap
+grid garden
+transform property in css
+transition in css for animations
+css variables
+
+box-shadow & text-shadow property
+
+day 23: 
+    negative margin was used before grid came in css
+    grid-box
+    with fragment unit in grid, horizontal scrolling is avoided then other units
+    repeat function
+    grid track (tracks can be  positive as well as negative)
+    grid-auto-flow
+    grid-row-start grid-row-end etc
+    span 2 span 3
+    grid-row: span 2(widely used)
+    most used grid properties:
+        grid-template-columns,  grid-row, grid-column
 
 
     
