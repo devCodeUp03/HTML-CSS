@@ -224,6 +224,17 @@ day 23:
     most used grid properties:
         grid-template-columns,  grid-row, grid-column
 
+day 24:
+    grid revised with grid garden
+    specificity-score in css
+    -> class has higher priority than a tag(id > class > id)
+    0 0 0 (id class tag)
+    used to override css
+    similarly inline css > internal > external(in terms of priority)
+    !important flag
+    a little about animations
+    if you want to have transition while both going and coming back write css in the child itself on hover
+
 
     
     
