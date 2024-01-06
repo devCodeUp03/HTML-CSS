@@ -253,7 +253,23 @@ day 26:
     and from tomorrow we start javascript
     
 day 27:
-
-
-    
+    alt + shift + a -> for multiline comment
+    ctrl + / -> for single line comment
+    why is variable used ?
+    ->it is used to reuse the code and make code easy to change the value all at once, create once use again and again
+    auto semi-colon concept in js
+    ctrl + shift + p -> to open vs code setting
+    minimap toggle
+    ctrl + tab > to switch between file in vs code
+day 28:
+    variable overriding
+    code executes line by line from top to bottom
+    variable declaration and initialization concept
+    variable made from "var" keyword can be redeclared however cannot be redeclared only re-initialized
+    var let const
+    2015 - es6 js version
+    new keywords like let and const were brought about
+    const variable name is usually written in uppercase plus SNAKE_CASE
+    always try and error
+    array and indexing in array
     
