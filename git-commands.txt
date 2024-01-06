@@ -52,7 +52,7 @@ term - merge conflict
 1. fork 2. clone 3. do some changes in the code 4. commit and push 5. do pull request
 
 //for collaboration
-1. go to your particular repository you what people to collarate in
+1. go to your particular repository you want people to collarate in
 2. go to the settings and click Collarators
 3. add people either with their username, email or full name
 Note: after collaboration that person you have added can "push the changes" as well
