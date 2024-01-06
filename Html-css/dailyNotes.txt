@@ -236,5 +236,24 @@ day 24:
     if you want to have transition while both going and coming back write css in the child itself on hover
 
 
+day 25:
+    jpg - 
+    png - has transparent background
+    svg is a vector image, doesn't get blur however zoom is done
+    alt + shift + r - opens image in its folder
+    typescale.com 
+    hamburger menu-size: 24px, 32px, 48px
+
+day 26:
+    onclick in js 
+    flex-grow
+    back-drop concept
+    brootstrap modal
+    css variables
+    and from tomorrow we start javascript
+    
+day 27:
+
+
     
     

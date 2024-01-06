@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Specifity-Score</title>
+    <title>Specificity-Score</title>
     <style>
         /* #child{
             background-color: aquamarine;
         }
         */
-        .parent div{
+        .parent {
             background-color: bisque;
+            border: 1px solid green;
+            height: 200px;
+            width: 200px;
         }
         .child{
             border: 1px solid black;
             height: 100px;
             width: 100px;
-            background-color: red !important;
+            background-color: red;
+            translate: 0 100px;
+            /* transition-property: transform background-color;
+            transition-duration: 1s; */
+            transition: all .5s linear;
+        }
+        .parent:hover .child{
+            background-color: green;
+            transform: translate(100px, -100px);           
         }
     </style>
 </head>
