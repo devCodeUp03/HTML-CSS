@@ -239,7 +239,7 @@ day 24:
 day 25:
     jpg - 
     png - has transparent background
-    svg is a vector image, doesn't get blur however zoom is done
+    svg is a vector image, doesn't get blur howmuchever zoom is done
     alt + shift + r - opens image in its folder
     typescale.com 
     hamburger menu-size: 24px, 32px, 48px
@@ -272,4 +272,24 @@ day 28:
     const variable name is usually written in uppercase plus SNAKE_CASE
     always try and error
     array and indexing in array
+
+day 29:
+    revision
+    donot repeat yourself concept
+    give a meaning variable name
+    write the array name in plural noun
+    node <js filename> to run in the terminal
+    array should have similar data type
+    adding new element in an array
+    sansari maya bichitra
+
+
+day 30:
+    object and how to create them
+    object doesn't contain index, it contains key-value pair
+    key, attribute or property in object is all the same
+    array of objects
+    accessing the property of the object and making changes
+    ctrl + g  -> to get a search bar of line
+
     
