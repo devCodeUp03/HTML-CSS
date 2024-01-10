@@ -292,4 +292,16 @@ day 30:
     accessing the property of the object and making changes
     ctrl + g  -> to get a search bar of line
 
+
+day 31:
+    multidimensional array and object(in other words: nested array and object)
+    whenever we need to add more information, create an object
+    when there are mutiply things, make an array
+    while accessing do it one by one from top to bottom
+    research on function
+
+day 32: 
+    use console.log to format the user interfaces like Bibek did in the group
+    consistency in array and object must be maintained
+    concept of nested object and nested array and mixture of both
     
