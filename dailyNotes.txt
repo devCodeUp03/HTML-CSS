@@ -237,7 +237,7 @@ day 24:
 
 
 day 25:
-    jpg - 
+    jpg - has some background
     png - has transparent background
     svg is a vector image, doesn't get blur howmuchever zoom is done
     alt + shift + r - opens image in its folder
@@ -276,7 +276,7 @@ day 28:
 day 29:
     revision
     donot repeat yourself concept
-    give a meaning variable name
+    give a meaningful variable name
     write the array name in plural noun
     node <js filename> to run in the terminal
     array should have similar data type
@@ -290,7 +290,7 @@ day 30:
     key, attribute or property in object is all the same
     array of objects
     accessing the property of the object and making changes
-    ctrl + g  -> to get a search bar of line
+    ctrl + g  -> to get a search bar for searching line
 
 
 day 31:
@@ -304,4 +304,65 @@ day 32:
     use console.log to format the user interfaces like Bibek did in the group
     consistency in array and object must be maintained
     concept of nested object and nested array and mixture of both
-    
+
+day 33: 
+    function
+    string literal or template literal
+    don't use + or , to print, rather use back-tick or string literals
+    /** + enter to write comment about function or functional comment
+    parameters and argument
+    principle of DRY (Donot Repeat Yourself)
+
+day 34:
+    the parameters in a function corresponds to the order in which arguments are passed
+    function are reusable like variables
+
+day 35: 
+    saturday
+
+day 36: 
+    break sagar tmg
+
+day 37: 
+    substring string function -> substring(0, 4) returns the characters of a string from index 0 - 3 excluding 4.
+    concept of object destructing let {name, age} = person; //for example
+    note that the name of the attribute in the object must match with the name that is declared while destructuring hence order doesn't matter
+    concept of helper function
+
+day 38:
+
+    we can also print a variable wrapping inside the the curly braces or in other words in the form of object (i.e if the key and value is the same)
+    operators
+    assignment operator(=)
+    count = count + 5
+    count += 5//short hand
+
+    pre-increment and post increment:
+    let number = 9;
+    number++ //number is incremeted by 1 but not instantly but later//updates number in the background
+
+    ++number //number increment by 1 and can access the updated value immediately
+
+    arithmetic operators(+, -, *, /, %)
+    note + is also used to concatenate two strings
+    use of % in design
+    comparison operators:
+    equality operator: ==
+    <, >, >=(greater or equals to), <=, !=
+
+    logical operators:
+    !, ||, &&
+
+    conditional statements
+    if, if-else also (nested if-else), if else if(does the work of nested if-else)  switch statments, ternary operators
+
+day 39:
+    /** */ for functional comments
+    anything can be passed as the parameter in the function from variable, constant to the function itself(called call back function)
+    concept of if else, nested if else and if else-if
+
+
+
+
+
+ 

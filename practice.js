@@ -148,13 +148,152 @@
 
 /* conditionals */
 
-if(23){
-  console.log("Desire the first steps to all achievments");
-  console.log("Faith to add spiritual power to that desire");
+// if(23){
+//   console.log("Desire the first steps to all achievments");
+//   console.log("Faith to add spiritual power to that desire");
+// }
+// else {
+//   console.log("followed by autosuggestion");
+// }
+
+//this points to the object that is currently calling the function
+//note: the scope of the function depends on where it is defined
+//however the value of this keyword is determined by how a function is
+//  called(runtime binding)
+
+//in case of arrow function the value of this keyword is determined by where the function in defined
+// console.log(this); 
+// var q = "Do you learn something of value from all mistakes ?";
+
+// function showQuestion(){
+//   console.log(this.q);
+//   console.log(this);
+// }
+
+// // questions();
+
+
+// let question = {
+//   q : "Has today added anything of value to your stock of knowledge or state of mind ?",
+//   sQuestion: showQuestion,
+//   nestedQuestion: {
+//     q : "If we are related, we shall meet",
+//     sQuestion: showQuestion,
+//   }
+// }
+
+// question.nestedQuestion.sQuestion();
+
+
+
+// function customTypeof(value) {
+//   return "STRING";
+//   return undefined;
+// }
+
+// console.log(customTypeof(true));
+
+// console.log(typeof true);
+
+
+
+
+
+
+// let array = [1, 2, 3, 4, 5];
+// let key = 5;
+
+// function binarySearch(arr, key){
+//   let start = 0;
+//   let end = arr.length - 1;
+//   let mid = start + Math.floor((end - start) / 2);
+//   while(start <= end){
+//     if(arr[mid] === key){
+//       return mid;
+//     }
+//     if(arr[mid] > key){
+//       end = mid - 1;
+//     }else {
+//       start = mid + 1;
+//     }
+//     mid = start + Math.floor((end - start) / 2);
+//   }
+//   return -1;
+// }
+
+// let index = binarySearch(array, key);
+// console.log(`Your key ${key} is at index: ${index}`);
+
+
+
+// let age = {
+//   myAge: 21,
+//   printMyAge: function (){
+//     console.log(this.myAge);
+//     console.log(this);
+//     let print = ()=>{
+//       console.log(this.myAge);
+//       console.log(this);
+//     }
+//     print();
+//   }
+// }
+
+
+// age.printMyAge();
+
+// creating a variable, there are three ways: var, let const
+//data types: primitive type: string, number, boolean, null, undefined non-primitive: array, object
+//nesting of array and object
+//accessing and updating the values of arrays and object namely index, and . operator respectively
+//string literal: `` backtick
+//function, parameters and arguments, return type
+
+
+// let student = {
+//   name: "Devashish",
+//   id: 35,
+//   emails: [
+//     "devashish.upreti10@gmail.com",
+//     "devashup68@gmail.com"
+//   ]
+// }
+
+// console.log(student.emails[0]);
+
+//arrays and their operations
+
+function printArray(array) {
+  for(let i = 0; i < array.length; i++) {
+    console.log(array[i]);
+  }
 }
-else {
-  console.log("followed by autosuggestion");
-}
+
+let books = ["Atomic Habits", "Think and grow rich", "The art of Public speaking", "How to win friends and influence people"];
+// console.log(books);
+
+// books.push("Status game");
+// books.push("The expection effect");
+// books.pop();
+// books.unshift("The expection effect");
+// books.shift();
+// let slice = books.slice(0, 2); //only remove two elements starting from 0
+// console.log(slice);
+
+// let splice = books.splice(0, 2, "My", "Hello", "world",); //remove two elements starting from index 0 and returns to array made from the removed elements
+// books.splice(2, 0, "thought", "is", "supreme") //remove no element only add the mentioned element starting from the starting mentioned index
+// console.log(splice);
+// console.log(books);
+
+// printArray(boo;ks);
+
+books.forEach(function(element) {
+  console.log(element);
+});
+
+printArray(books);
+
+
 
 
 

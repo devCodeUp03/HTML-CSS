@@ -5,7 +5,6 @@
 2.1 to check wheather step 2 is working or not
     git remote -v
 
-
 //regular codes
 1. git status (compare online code with local code) [optional command]
 2. git add . (to add all the files and folders to the staging area)
@@ -13,7 +12,6 @@
 3. git commit -m "<commit message>"
 4. git push(-u origin master) - we can use -u flag instead of --set-upstream -> this is used to make sure we don't have to repeat 'origin master' all the time
 5. git commit -a -m "<commit message>" - to directly commit all the files without going through a staging area
-
 
 //branches
 1. git branch - to view different branches
@@ -26,11 +24,9 @@
 1. git diff <branch-name> - to check difference with the branch
 2. git merge <branch-name> - to merge one branch with another
 
-
 //clone
 1. git clone <url-of-the-repo> - to copy the given repo to the local computer/machine
 2. git pull - to pull only the changes in the cloned file
-
 
 //Configuration
 1. git config --global user.name "<name>" - to set name
@@ -38,13 +34,11 @@
 3. git config user.name - to see set name
 4. git config user.email - to see set email
 
-
 //
 ctrl + c - to end the process
 //for making sure you are able to pull
 git restore . - to restore the changes
 git clean -f -d -> to delete new files 
-
 
 term - merge conflict
 
