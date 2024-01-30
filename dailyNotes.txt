@@ -325,14 +325,14 @@ day 36:
 
 day 37: 
     substring string function -> substring(0, 4) returns the characters of a string from index 0 - 3 excluding 4.
-    concept of object destructing let {name, age} = person; //for example
-    note that the name of the attribute in the object must match with the name that is declared while destructuring hence order doesn't matter
-    concept of helper function
+    concept of object destructuring let {name, age} = person; //for example
+    note that the name of the attribute in the object must match with the name that is declared while destructuring and order doesn't matter
+    concept of helper function(like returning the substring of the original string)
 
 day 38:
-
     we can also print a variable wrapping inside the the curly braces or in other words in the form of object (i.e if the key and value is the same)
-    operators
+
+    //operators
     assignment operator(=)
     count = count + 5
     count += 5//short hand
@@ -340,12 +340,12 @@ day 38:
     pre-increment and post increment:
     let number = 9;
     number++ //number is incremeted by 1 but not instantly but later//updates number in the background
-
     ++number //number increment by 1 and can access the updated value immediately
 
     arithmetic operators(+, -, *, /, %)
     note + is also used to concatenate two strings
     use of % in design
+
     comparison operators:
     equality operator: ==
     <, >, >=(greater or equals to), <=, !=
@@ -354,12 +354,117 @@ day 38:
     !, ||, &&
 
     conditional statements
-    if, if-else also (nested if-else), if else if(does the work of nested if-else)  switch statments, ternary operators
+    if, if-else also (nested if-else), if else-if(does the work of nested if-else)  switch statments, ternary operators
 
 day 39:
     /** */ for functional comments
-    anything can be passed as the parameter in the function from variable, constant to the function itself(called call back function)
+    anything can be passed as the parameter in the function from variable, constant to the function itself(and such function is called callback function)
     concept of if else, nested if else and if else-if
+
+day 40:
+    switch and nested if-else work similarly in terms of application
+
+    codes, written below the return keyword, are unreacheable
+    a problem can have multiple solutions, there may not be the fixed one solution  
+    Note: it is better to have only one return statment rather than many
+    don't forget about break keyword with switch statement
+
+    some tricks: to define a range we use && operator for instance (from 10 to 20, we can write x >= 10 && x <= 20) for defining something beyond the range we can use || operator for instance (x <= 9 || x >= 21);
+    for loop: 
+           for(initialPoint; condition: mutator) {
+            //code
+           }
+day 41:
+    array and loops come together
+    loops:
+        for(initialPoint; condition; mutator) {
+            //codes
+        }
+
+    "node index.js" to run in terminal
+    products api
+    ctrl + l -> to select a line in vs code
+    tip: If you are supposed to create a dynamic thing but you don't exactly know to then start from the core(i.e. static)
+    function is reusable (never forget)
+    note: logical operators are used to evaluate multiple conditions at the same time(this helps us to avoid so many nested if-else conditions and if-else if)
+
+
+day 42:
+    concept of break and return ( use it )
+    return - ends the function 
+    break - ends the loop
+
+    //Or operator demands only 1 condition to be true for the entire expression to be true
+    //And operator demands all the conditions to be true for the entire expression to be true
+    //Not operator inverts the truthness of the expression
+
+    note: if you are using boolean expression, you don't need to compare it with 'true'
+
+    ... rest operator (in function parameter) collects remaining values of arguments in the form of array(incase there isn't parameter to collect arguments in the function)
+
+    //arrow function
+
+    day 43:
+        note: variables cannot be used before declaration, and same with the arrow function
+        //however traditional functions
+        can be called before definition (and this feature is called hoisting)
+
+        //push method in an array
+        array.push(<element>) to add new element at the last position of an array
+        [].push() method in array
+        //changes the original array
+
+        note: not including let, var or const before a variable makes that variable of global scope
+    
+    day 44: 
+        While git cloning, you cannot clone the folder inside of the main folder or git repo, it has to be the url of the main folder or git repo
+        note: we can work with arrow function withou return key word also in other words return keyword can be skipped
+        .toLowerCase() method in string
+        .toUpperCase() 
+        .slice(startIndex, endIndex) returns the slice excluding the element of the endIndex. Also this function donot modify the string or array
+    
+    day 45: 
+        some practice and different ways to solve the problem of find country code
+        setTimeout function -> setTimeout(showPopup, 2000) //2000ms means 2000ms
+        here the function isn't called only the "name" of the function is mentioned
+        or else if called the return value is received which doesn't lead to our desired result
+        
+        a function passed as an argument to another function is called callback function
+        //function with no name is called anonymous function
+        
+        //Here setTimeout is also an asynchronous function
+
+        el means element (we use it alot), idx for index
+
+        //forEach
+        in forEach callback function, first parameter is element, second is index
+        Note: Keywords like return and break don't work in forEach Function
+        forEach is applicable only for array as it one of the methods of forEach
+
+        //map 
+        returns the array by modifying the each element of array (note: the length of new array is always equal to the original array), it doesn't modify the original array either
+
+        //filter
+        returns the array of elements which satisfies the provided condition, (the lenght of new array is always less than or equal to the original array)
+
+        //find
+        returns a (first)single element that satisfies the given condition or matches with the target element. Stops iteration as soon as the first element satisfies the condition incase there are multiple elements that satisfies the condition. if no element satisfies the condition the find method returns 'undefined'
+
+        note: when curly braces is used with arrow function we explicitly need to mention the "return keyword" however for a single statment no curly braces is required as well as it autmatically returns
+
+
+
+    
+
+
+        
+
+           
+
+
+
+    
+
 
 
 

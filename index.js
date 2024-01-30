@@ -576,53 +576,503 @@
 //         }
 //     }
 // }
-console.log(getMonth(1));
+// console.log(getMonth(8));
+// console.log(getMonth());
 
-function getMonth(month) {
-  switch (month) {
-    case 1:
-      return "Jan";
+// function getMonth(month) {
+//   switch (month) {
+//     case 1:
+//       return "Jan";
 
-    case 2:
-      return "Feb";
+//     case 2:
+//       return "Feb";
 
-    case 3:
-      return "Mar";
+//     case 3:
+//       return "Mar";
 
-    case 4:
-      return "April";
+//     case 4:
+//       return "April";
 
-    case 5:
-      return "May";
+//     case 5:
+//       return "May";
 
-    case 6:
-      return "June";
+//     case 6:
+//       return "June";
 
-    case 7:
-      return "July";
+//     case 7:
+//       return "July";
 
-    case 8:
-      return "August";
+//     case 8:
+//       return "August";
 
-    case 9:
-      return "Sep";
+//     case 9:
+//       return "Sep";
 
-    case 10:
-      return "Oct";
+//     case 10:
+//       return "Oct";
 
-    case 11:
-      return "Nov";
+//     case 11:
+//       return "Nov";
 
-    case 12:
-      return "Dec";
-    default:
-      if (typeof month == "number") {
-            return "Type number between 1 - 12";
-      } else {
-        return "Give valid type: number";
-      }
-  }
-}
+//     case 12:
+//       return "Dec";
+//     default:
+//       if (typeof month == "number") {
+//         return "Type number between 1 - 12";
+//       } else {
+//         return "Enter valid type: number";
+//       }
+//   }
+// }
+//The above program is correct however it can be optimized in the sense that we can check the type of the input first and only then check for the valid numbers which will reduce time complexity
+
+// function getMonth(month) {
+//   if (typeof month == "number") {
+//     if (month >= 1 && month <= 12) {
+//       switch (month) {
+//         case 1:
+//           return "Jan";
+
+//         case 2:
+//           return "Feb";
+
+//         case 3:
+//           return "Mar";
+
+//         case 4:
+//           return "April";
+
+//         case 5:
+//           return "May";
+
+//         case 6:
+//           return "June";
+
+//         case 7:
+//           return "July";
+
+//         case 8:
+//           return "August";
+
+//         case 9:
+//           return "Sep";
+
+//         case 10:
+//           return "Oct";
+
+//         case 11:
+//           return "Nov";
+
+//         case 12:
+//           return "Dec";
+//       }
+//     } else {
+//       return "Enter a number from 1 - 12";
+//     }
+//   } else {
+//     return "Enter valid type: number";
+//   }
+// }
+
+// console.log(getMonth(5));
+
+// function getMonth(month) {
+//   let ouput = null;
+//   if (typeof month == "number") {
+//     if (month >= 1 && month <= 12) {
+//       switch (month) {
+//         case 1:
+//           output = "Jan";
+//           break;
+
+//         case 2:
+//           ouput = "Feb";
+//           break;
+
+//         case 3:
+//           ouput = "Mar";
+//           break;
+
+//         case 4:
+//           ouput = "April";
+//           break;
+
+//         case 5:
+//           ouput = "May";
+//           break;
+
+//         case 6:
+//           ouput = "June";
+//           break;
+
+//         case 7:
+//           ouput = "July";
+//           break;
+
+//         case 8:
+//           ouput = "August";
+//           break;
+
+//         case 9:
+//           ouput = "Sep";
+//           break;
+
+//         case 10:
+//           ouput = "Oct";
+//           break;
+
+//         case 11:
+//           ouput = "Nov";
+//           break;
+
+//         case 12:
+//           ouput = "Dec";
+//           break;
+//       }
+//     } else {
+//       return "Enter a number from 1 - 12";
+//     }
+//   } else {
+//     return "Enter valid type: number";
+//   }
+//   return ouput;
+// }
+
+// let todos = [
+//   {
+//     title: "html",
+//     status: true
+//   },
+//   {
+//     title: "js",
+//     status: false
+//   },
+//   {
+//     title: "react",
+//     status: false
+//   }
+// ];
+
+//ouput: html is completed
+//js is pending
+//react is pending
+
+//concepts i will be using here function, object destructuring, if-else or ternary operator
+
+// function print(course) {
+//   let {title, status} = course;
+//   // if(status) {
+//   //   console.log(`${title} is completed`);
+//   // } else {
+//   //   console.log(`${title} is pending`);
+//   // }
+
+//   status ? console.log(`${title} is completed`) : console.log(`${title} is pending`);
+// }
+
+// print(todos[0]);
+// for(let index = 0; index < todos.length; index++) {
+//   print(todos[index]);
+// }
+
+// for(let number = -5; number < 6; number++) {
+//   console.log(number);
+// }
+/**
+ * 
+//  * @param {*} multiplicand 
+//  * @param {*} from 
+//  * @param {*} to 
+//  */
+// function findMultiplication(multiplicand, from, to) {
+//   for(let multiplier = from; multiplier <= to; multiplier++) {
+//     console.log(`${multiplicand} * ${multiplier} = ${multiplicand * multiplier}`);
+//   }
+// }
+
+// findMultiplication(5, 6, 10);
+
+// let user1 = {
+//   username: "ram",
+//   password: "123456"
+// };
+
+// let user2 = {
+//   username: "hari",
+//   password: "987654"
+// };
+
+// function login(user, username, password) {
+//   if(user.username == username && user.password == password){
+//     console.log(`${username} can login`);
+//   } else {
+//     console.log(`${username} cannot login`);
+//   }
+// }
+
+// login(user2, "harikrishna", "987654");
+
+// let users = [
+//   {
+//     username: "ram",
+//     password: "password",
+//   },
+//   {
+//     username: "hari",
+//     password: "12345",
+//   },
+//   {
+//     username: "shyam",
+//     password: "54321",
+//   },
+// ];
+
+// function signIn(username, password) {
+//   let match = 0;
+//   for (let user = 0; user < users.length; user++) {
+//     if (users[user].username == username && users[user].password == password) {
+//       match++;
+//     }
+//   }
+
+//   if (match == 1) {
+//     console.log("Login Successful");
+//   } else {
+//     console.log("Invalid Credentials");
+//   }
+// }
+
+// signIn("ram", "password"); // "login successful" in case of both username and password being correct else "invalid credentials"
+// //concept required to be used is loop
+// if (hasScholarship) {
+//   console.log(`${name} can give exam`);
+// } else {
+//   if (paidStatus) {
+//     console.log(`${name} can give exam`);
+//   } else {
+//     console.log(`${name} cannot give exam`);
+//   }
+// }
+
+// let student = {
+//   name: "ram",
+//   paidStatus: false,
+//   hasScholarship: false,
+//   fulfillAttendance: false
+// };
+
+// let { name, paidStatus, hasScholarship, fulfillAttendance } = student;
+
+// if((paidStatus || hasScholarship) && fulfillAttendance) {
+//   console.log("Can give exam");
+// } else {
+//   console.log("Cannot give exam");
+// }
+
+/* arrow function */
+// const sum = (...rest) => {
+//   let sum = 0;
+//   for (let i = 0; i < rest.length; i++) {
+//     sum += rest[i];
+//   }
+//   return sum;
+// };
+
+// console.log(sum(2, 3, 5, 6));
+
+// console.log(course)
+// let course = "mern";
+
+// function doubleTheArray(arr) {
+//   let doubles = [];
+//   for(let index = 0; index < arr.length; index++) {
+//     let double = arr[index] * 2;
+//     doubles.push(double);
+//   }
+//   return doubles;
+// }
+
+// let newArray = doubleTheArray([1, 2, 3]);
+// console.log(newArray);
+
+// const doubleTheArray = arr => {
+//   let doubles = [];
+//   for(let index = 0; index < arr.length; index++) {
+//     let double = arr[index] * 2;
+//     doubles.push(double);
+//   }
+//   return doubles;
+// }
+
+// let newArray = doubleTheArray([1, 2, 3, 4]);
+// console.log(newArray);
+
+// const doubleArray = arr => {
+//   for(let index = 0; index < arr.length; index++) {
+//    arr[index] *= 2;
+//   }
+//   return arr;
+// }
+
+// let array = doubleArray([1, 2, 3, 4]);
+// console.log(array);
+
+//task: get separate arrays of status "completed" and "pending" from the given
+// let todos = [
+//   {
+//     title: "variable",
+//     status: "completed",
+//     createAt: "2024-01-03",
+//   },
+//   {
+//     title: "array",
+//     status: "completed",
+//     createAt: "2024-01-05",
+//   },
+//   {
+//     title: "object",
+//     status: "completed",
+//     createAt: "2024-01-07",
+//   },
+//   {
+//     title: "loop",
+//     status: "pending",
+//     createAt: "2024-01-09",
+//   },
+//   {
+//     title: "function",
+//     status: "pending",
+//     createAt: "2024-01-10",
+//   },
+// ];
+
+// let completedTodos = [], pendingTodos = [];
+
+// for(let index = 0; index < todos.length; index++) {
+//   let status = todos[index].status;
+//   if(status == "completed") {
+//     completedTodos.push(todos[index]);
+//   } else { //if it is not "completed" then obviously it is "pending"
+//       pendingTodos.push(todos[index]);
+//   }
+// }
+
+// // console.log(index);
+// console.log(completedTodos); // []
+// console.log(pendingTodos);
+
+//Task
+
+// const nepaliNames = ["Aarav", "Aarya", "Aasha", "Anisha"];
+
+// let dummyUsers = [];
+// // function createDummyUsers(users) {
+// //   for (let index = 0; index < users.length; index++) {
+// //     let user = {
+// //       name: users[index],
+// //       email: `${users[index].toLowerCase()}@gmail.com`,
+// //       password: `${users[index].toLowerCase()}${index}`,
+// //     };
+// //     dummyUsers.push(user); //can directly make an object inside the push
+// //   }
+// // }
+// // createDummyUsers(nepaliNames);
+// // for output look at the console
+
+// dummyUsers = nepaliNames.map((user, index) => (
+//   {
+//   name: user,
+//   email: `${user.toLowerCase()}@gmail.com`,
+//   password: `${user.toLowerCase()}${index}`
+//   }
+// ));
+// console.log(dummyUsers);
+
+const nepaliNames = ["Aarav", "Aarya", "Aasha", "Anisha"];
+
+// for (let index = 0; index < nepaliNames.length; index++) {
+//   console.log(nepaliNames[index]);
+// }
+
+// const popUp = () => {
+//   console.log("Pop Up");
+// };
+
+// setTimeout(popUp, 2000); //here popUp is a call back function
+// //or
+// setTimeout(() => {
+//   console.log("Pop Up");
+// }, 3000); //call me back after 3 second is passed
 
 
+// setTimeout(function () {
+//   console.log("Pop Up");
+// }, 4000);
+
+// const printName = (name) => { //each element of the array is automatically passed
+//   console.log(name);
+// }
+
+// // nepaliNames.forEach(printName);
+
+// nepaliNames.forEach((el, i) => {
+//   console.log(el, i);
+// });
+
+// let numbers = [1, 2, 3, 4, 5];
+// let sum = 0;
+// numbers.forEach((el) => {
+//   sum+=el;
+// })
+
+// console.log(sum);
+
+
+// let todos = [
+//   {
+//     title: "html",
+//     status: true
+//   }, 
+//   {
+//     title: "js",
+//     status: false
+//   }, 
+//   {
+//     title: "react",
+//     status: false
+//   }
+// ]
+
+//output 
+//html is completed
+//js is pending
+//react is pending
+
+// todos.forEach((el) => {
+//   // if(el.status) {
+//   //   console.log(`${el.title} is completed`);
+//   // } else {
+//   //   console.log(`${el.title} is pending`);
+//   // }
+//   let print = el.status ? `${el.title} is completed`: `${el.title} is pending`;
+//   console.log(print);
+
+// });
+
+
+/*
+  array functions
+    -forEach
+    -map
+    -filter
+    -find
+*/
+
+
+// let numbers = [1, 2, 3, 4, 5];
+// let doubles = numbers.map((el) => el%2==0);//notice the difference between map and filter
+// console.log(doubles);
+
+// let evenNumbers = numbers.filter((el) => el%2 == 0);
+// console.log(evenNumbers);
 
