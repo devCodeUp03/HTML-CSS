@@ -1,0 +1,15 @@
+1. ctrl + space => for getting suggestions
+2. ctrl + enter => to go to the next line no matter where the cursor is
+3. alt + shift + <arrow key> => to copy the selected lines
+4. alt + <arrow key> => to move the line up and down
+5. ctrl + b => to toggle open and close side bar
+6. windows + v => to see all the latest copied data in the clipboard
+7. ctrl + p => to get the search bar for files in vs code
+8. ctrl + r => for search folder
+9. alt + shift + i => to get multiple cursor in selected lines
+10. ctrl + tab => to tab between opened files in vs code 
+11. ctrl + / => for single line comment
+12. alt + shift + a => for multi-lined comment
+13. ctrl + g => to get search for searching lines
+14. ctrl + l => to select the whole line in vs code
+15. ctrl + shift + k => to delete the selected line or cursored line

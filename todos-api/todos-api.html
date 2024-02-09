@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todos-api</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+    <form onsubmit="addTodo(event)">
+        <input type="text" name="" id="todo">
+        <button>add</button>
+    </form>
+    <ul id="todos-list">
+    </ul>
+    <script>
+        let todos = [];
+        function fetchApi() {
+            axios.get('https://todo-api-dom.vercel.app/api/todos/')
+                .then((response) => {
+                    let todos = response.data.data;
+                    let output = ``;
+                    todos.forEach(el => {
+                        output += `<li>${el.title} <button onclick="deleteTodo('${el._id}')">del</button> <button onclick="updateTodo('${el._id}')">update</button></li>`;
+                    });
+                    document.getElementById('todos-list').innerHTML = output;
+                });
+        }
+
+
+        function addTodo(event) {
+            event.preventDefault();
+            let input = document.getElementById('todo').value;
+            axios.post('https://todo-api-dom.vercel.app/api/todos/', {
+                title: `${input}`
+            })
+            .then(() => {
+                fetchApi();
+            });       
+        }
+
+        fetchApi();
+
+        function deleteTodo(id) {
+            axios.delete('https://todo-api-dom.vercel.app/api/todos/'+id)
+            .then(() => {
+                fetchApi();
+            });
+        }
+
+        function updateTodo(id) {
+            axios.put('https://todo-api-dom.vercel.app/api/todos/'+id, {
+                title: "superman"
+            })
+            .then(() => {
+                fetchApi();
+            });
+        }
+
+
+    </script>
+</body>
+
+</html>

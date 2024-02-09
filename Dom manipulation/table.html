@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 1px solid;
+        }
+
+        th, td {
+            border: 1px solid;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="" onsubmit="addTodos(event)">
+        <input required type="text" name="" id="item" placeholder="item">
+        <input required type="number" id="quantity" placeholder="quantity" min="0">
+        <button>add</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+            <!-- <tr>
+                <td>Think </td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Think </td>
+                <td>2</td>
+            </tr> -->
+        </tbody>
+    </table>
+    <script src="./table.js"></script>
+</body>
+</html>

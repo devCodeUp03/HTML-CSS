@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        img {
+            height: 200px;
+            width: 300px;
+        }
+
+        .product {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1>Products</h1>
+    <div id="products" class="products">
+    </div>
+    <script>
+        let products = [];
+        function fetchProducts() {
+            axios.get('https://dummyjson.com/products')
+                .then((response) => {
+                    console.log(response.data.products);
+                    products = response.data.products;
+                    console.log(products.length);
+                    let output = ``;
+                    products.forEach(el => {
+                        output += `<div class="product">
+                                  <img src="${el.thumbnail}" />
+                                    <p>${el.title}</p> 
+                                   </div>`;
+                    });
+                    document.getElementById('products').innerHTML = output;
+                });
+        }
+        fetchProducts();        
+    </script>
+</body>
+
+</html>

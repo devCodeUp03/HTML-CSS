@@ -132,7 +132,7 @@ Day 13:
     overflow: hidden property in flexbox
     flex-wrap: is used to wrap the flex items in the flexbox
     by default children are stretched in flexbox
-    when there is multiple row of children, note: we can use align-content(however this property in now really used so much)->flex-wrap works side-by-side
+    when there is multiple row of children, note: we can use align-content(however this property in not really used so much)->flex-wrap works side-by-side
     how selectors work, what happens when there is space between selectors and what happens otherwise and so on
     eg: p.child(paragraph tag which contains child class) vs p .child(paragraph inside which child has a class of "child")
     Look for the unique thing for selection or selector
@@ -425,8 +425,8 @@ day 42:
     
     day 45: 
         some practice and different ways to solve the problem of find country code
-        setTimeout function -> setTimeout(showPopup, 2000) //2000ms means 2000ms
-        here the function isn't called only the "name" of the function is mentioned
+        setTimeout function -> setTimeout(showPopup, 2000) //2000ms means 2s
+        here the function isn't called only the "name" of the function is mentioned or passed
         or else if called the return value is received which doesn't lead to our desired result
         
         a function passed as an argument to another function is called callback function
@@ -448,9 +448,137 @@ day 42:
         returns the array of elements which satisfies the provided condition, (the lenght of new array is always less than or equal to the original array)
 
         //find
-        returns a (first)single element that satisfies the given condition or matches with the target element. Stops iteration as soon as the first element satisfies the condition incase there are multiple elements that satisfies the condition. if no element satisfies the condition the find method returns 'undefined'
+        returns a (first) single element(returns the object if it is an array of objects) that satisfies the given condition or matches with the target element. Stops iteration as soon as the first element satisfies the condition incase there are multiple elements that satisfies the condition. if no element satisfies the condition the find method returns 'undefined'
 
         note: when curly braces is used with arrow function we explicitly need to mention the "return keyword" however for a single statment no curly braces is required as well as it autmatically returns
+
+        ternary operator => condition ? if true: if false;
+
+    day 46: 
+        todos.forEach((todo) => {}) //read as todos dot forEach todo
+        //map
+
+        //learn about reduce -> reduce method reduces the values of an array into a single value and return the final value after all iteration is completed
+        .reduce(callback, initialValueOfAccumulator)
+        .reduce((accumulator, currentValue, currentIndex, array)=>{})
+        eg: can be used to calculate the sum of the array, the reduce method
+
+        //currentValue means the current element
+    
+    day 47:
+        ctrl + r -> to tab between different folders(very powerful)
+        press alt key to open in a new vs code(for files only)
+        ctrl + p -> to tab between different files in the current folder (very powerful)
+
+
+        //falsy values in js
+        false, null, undefined, 0, NaN(eg: "hello" - "world"), empty string ("" note: no space in between) - six of them
+        everything else that these is a true value
+
+        //incase of arrow function//to make code short
+        if there is only one parameter, we needn't use parenthesis
+        if there is only one statement you needn't write curly braces and return keyword
+
+        //map is very important in react
+
+        => forward arrow is always with the function
+
+
+        //asynchronous programming
+
+        promise, then, catch, finally, async await
+
+        //exception handling
+        try and catch
+        try {
+            //code that it prone to error
+        }catch(err) {
+            console.log(err);
+        } //this helps to run the other code before it even if the above code is errorful 
+
+        api -> url that helps us link backend and frontend for data
+
+        //by the way we needed write promise code ourselves 
+
+
+        REAL GAME OF STRING LITERAL WITH CHATGPT
+        [object object] is the string representation of object 
+
+    day 48:
+        dom manipulation: changing html and css using js
+        always wrap the input field with form tag
+        document is window object
+
+        innerHTML takes string, innerHTML = "<li>react</li> <li>node</li>"
+        shift + enter -> takes to the new line
+        use backtick for multiple for adding variable and expresions
+        kebab case in html and css
+        required in input field
+        
+        task is to delete li
+            tips: might need to make a function
+
+
+    day 49:
+       filter method to delete the element of the given index, not only splice can be used
+
+       research: local storage in browser
+                 remove the the text from the input field once the form is submitted
+                 create a table containing: fruit-name and quantity
+
+    mongodb atlas for api
+
+    postman: api testing tool
+
+    md: mark down file just like a text file
+    crud operations in database
+        -create
+        -read
+        -update
+        -delete
+
+    request methods
+        - GET - data read
+        - POST - data create
+        - PUT - data update
+        - DELETE - delete data
+
+    STATUS CODES
+        - 200 line means success
+        - 300 redirect 
+        - 400 client side error - frontend side error
+        - 500 backend/server side error
+
+
+    required field in form to make the user must write something beform submission
+
+    day 50: 
+        dynamic table in UI/UX
+        axios api package for api call
+        axios.get - to read data
+        axios.post - to create data
+        .then, .catch > for error
+
+    day 51:
+        changing themes light and dark
+        adding and removing class using classList
+        -> classList.add('<classname>') => to add new css class
+        -> classList.remove('<classname>') => to remove existing css class
+        -> classList.toggle('<classname>') => to add if absence and vice versa
+        api call
+        revised: get, post, put, del
+
+        tip: test in a separate file whenever you want something to understand
+        tomorrow, we will learn about node and api creation in later days
+
+    day 52: 
+        event.preventDefault() is used only while submitting forms
+        dummy data from fake json website
+        console.log(response.data.<arrayname>) array-name is based on the api
+        axios is a asynchronous function that returns promise
+
+
+    
 
 
 

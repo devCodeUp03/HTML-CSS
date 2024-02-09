@@ -1244,13 +1244,11 @@ let countries = [
 // }
 
 
-// function findCountryCode(countryName) {
-//     let country = countries.find((el) => {
-//         return el.name == countryName
-//     });
-//     return country.code;
-// }
-// let countryCode = findCountryCode("Nepal");
-// console.log(countryCode);
+function findCountryCode(countryName) {
+    let country = countries.find((el) => el.name == countryName);
+    return country.code;
+}
+let countryCode = findCountryCode("Nepal");
+console.log(countryCode);
 
 // console.log(countries.length);

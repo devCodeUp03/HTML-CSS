@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .dark {
+            background-color: #333;
+            color: whitesmoke;
+        }
+
+        .container {
+            height: 100vh;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <!-- <button onclick="toDarkMode()" id="change-theme">Change Theme</button> -->
+        <button id="dark-btn" onclick="changeTheme()">dark</button>
+        <button id="light-btn" onclick="changeTheme()" class="hidden">light</button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis optio velit accusantium possimus odit
+            quaerat dolorum labore ea praesentium non fuga, veniam sequi, odio obcaecati blanditiis qui, laborum omnis
+            corporis. Libero quaerat minima quos sunt placeat? Excepturi cum suscipit id, ratione soluta quisquam nisi,
+            est quas eaque aliquid voluptates, numquam veritatis! Suscipit, numquam praesentium nisi officiis eaque
+            veniam error consequatur dolores vitae distinctio expedita.</p>
+    </div>
+</body>
+<script>
+
+    function changeTheme() {
+        document.getElementById('container').classList.toggle('dark');
+        document.getElementById('light-btn').classList.toggle('hidden');
+        document.getElementById('dark-btn').classList.toggle('hidden');
+
+    }
+    // function toDarkMode() {
+    //     document.getElementById('container').classList.toggle('dark');
+    //     document.getElementById('light-btn').classList.toggle('hidden');
+    //     document.getElementById('dark-btn').classList.toggle('hidden');
+    // }
+    // function toLightMode() {
+    //     document.getElementById('container').classList.toggle('dark');
+    //     document.getElementById('light-btn').classList.toggle('hidden');
+    //     document.getElementById('dark-btn').classList.toggle('hidden');
+    // }
+
+
+    // function toDarkMode() {
+    //     let darkMode = false;
+    //     if(darkMode) {
+    //         document.getElementById('change-theme').classList.remove('dark');
+    //         darkMode = !darkMode;
+    //     } else {
+    //         document.getElementById('change-theme').classList.add('dark');
+    //         darkMode = !darkMode;
+    //     }
+    // }
+
+    // function toLightMode() {
+    //     document.getElementById('container').classList.remove('dark');
+    // }
+</script>
+
+</html>
