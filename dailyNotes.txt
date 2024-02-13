@@ -576,6 +576,78 @@ day 42:
         dummy data from fake json website
         console.log(response.data.<arrayname>) array-name is based on the api
         axios is a asynchronous function that returns promise
+    
+    day 53: 
+        express
+        global object eg: console, __filename, __dirname, require
+        node -v or node --version => to check node version
+        node and browser has different environment
+        __filename, __dirname
+        node modules:
+            - third party modules/library
+                eg:- axios, nodemon, bcrypt etc
+            - core modules
+            - local modules [do some research]
+                - common js modules (used in express)
+                - Es modules (used in react)
+        concept of data breach i.e data leak
+
+
+        npm -> node package manager
+        node module -> bcrypt for encrypting password
+
+        npm i <third-party-modulename> to install in the system
+
+
+        once again if key and value are same, we don't need to write the both i.e {
+            "username": username,
+            or 
+            username only
+        }
+
+        package.json contains our project information
+        package-lock.json contains information about the package that we have been using
+
+        if you don't have any package.json then you can write (npm init) to add package.json
+
+        setting environment variables in windows for accessing directly from command prompt
+
+        for live reload in node -> install nodemon
+        write: npm install -g nodemon -> for global access
+
+        nodemon <filename> -> to run the file
+    
+    day 54: 
+
+
+
+
+
+
+
+    day 55:
+        import/exports in nodejs
+        module.exports to export a single data
+        There is only one main file in here
+
+        There are two types of exports: 
+            i. default exports
+             eg: module.exports = fetchProducts
+             only one module.exports can be used
+             if we want to export multiple things then we need to make and object export
+            
+        
+        //express
+        npm i express
+        nodemon by default picks index.js
+        api created
+        app.get
+
+        //tomorrow
+        we will be learning about post request and middleware
+
+
+
 
 
     
