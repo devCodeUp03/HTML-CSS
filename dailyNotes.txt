@@ -587,6 +587,7 @@ day 42:
             - third party modules/library
                 eg:- axios, nodemon, bcrypt etc
             - core modules
+                eg:- module.exports, http module
             - local modules [do some research]
                 - common js modules (used in express)
                 - Es modules (used in react)
@@ -618,12 +619,20 @@ day 42:
         nodemon <filename> -> to run the file
     
     day 54: 
+        npm i bcrypt
+        npm uninstall bcrypt
+        npm i -g nodemon
+        how does require work ?
+        
+        - third party modules
+        - core module (internally available in node)
+        eg:
+            const path = require('path');
+            console.log(path.join(__dirname), "uploads");
 
-
-
-
-
-
+            http module is tedious to work with as we need to write alot of if else 
+        Note: we normally host frontend in 3000 and backend in 8000
+        
 
     day 55:
         import/exports in nodejs
@@ -645,6 +654,95 @@ day 42:
 
         //tomorrow
         we will be learning about post request and middleware
+
+    day 56:
+        listen method keeps listening to the mentioned portion
+        express console and browser console is different
+        browser console is only for frontend
+
+        we create document using postman
+
+        //status code
+        400 - bad request
+        401 - unauthorized access - not logged in 
+        404 - resource not found
+
+        res.status(401).send({
+            message: 'unauthorized'
+        });
+
+        res.send() is a function that shows whatever is passed to the frontend
+
+        note: we can only send only one response to the frontend from backend
+
+        //minimap
+        ctrl + shift + p & minimap
+
+
+        //middleware 
+        it is any function which has access to request and response
+        -> the run before everything else
+        next in middleware points to the next valid middleware (here valid keyword is very important)
+        callback inside app.get is also a middleware precisely a action middleware
+
+        tomorrow we will learn about how to wrap a particular request inside a middleware
+    
+    day 57:
+        middleware, creating middleware to specific route only
+        also known as route level middleware
+        public route -. route that doesn't require login
+        protected route - route that requires login
+        while importing the local module, you may or maynot add .js extension while importing or require
+
+        400 => bad data sent by client sometimes it is also 422
+
+        note: req.body can be accessed by any middleware once express.json() middleware if globally declared
+
+    day 58:
+        title.trim() -> this function trims the left and right space and returns a new string
+
+        common error: cannot read properties of undefined or null etc
+
+        //optional chaining
+        person.address?.street -> access the value if exists else don't
+        todos.some() method
+
+        slug in url
+
+        postman documentation and publish
+        add dynamic id while posting
+    
+    day 59:
+        introduction to database
+        relational database, normalization
+        relationships: one to one, many to one, many to many
+        data integrity, data duplication concept
+
+        download: mongodb compass and mongodb shell
+    day 60:
+        crud operation in core mongodb
+
+    day 61: 
+        mongodb setup using mongoose third party module
+        creation of schema and model
+        note: when creating a model, make the first letter Uppercase
+        methods are present in models and not in schemas
+        error handling while doing post request
+        error handling is superbly important
+
+    day 62: 
+        async and await keywords to make asynchronous code behave like synchronous
+
+        async is used infront of the function and await inside of it
+        await cannot be used inside of the normal function, it has to an asynchronous one
+
+        async, await makes code cleaner
+
+        callback hell takes place with .then .catch
+
+
+
+
 
 
 

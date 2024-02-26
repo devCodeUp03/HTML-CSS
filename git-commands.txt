@@ -26,7 +26,7 @@
 
 //clone
 1. git clone <url-of-the-repo> - to copy the given repo to the local computer/machine
-2. git pull - to pull only the changes in the cloned file
+2. git pull - to pull only the changes in the cloned repo
 
 //Configuration
 1. git config --global user.name "<name>" - to set name

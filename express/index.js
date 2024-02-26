@@ -1,56 +1,78 @@
-// // // console.log("js linked");
+const express = require("express");
+const mongoose = require("mongoose");
 
-// // // console.log(__filename);
-// // // // console.log(__dirname);
-// // // console.log("express js");
-// // const bcrypt = require("bcrypt");
-// // const saltRounds = 12;
+const app = express();
 
-// // function signup(username, email, password) {
-// //     bcrypt.hash(password, saltRounds, function(err, hash) {
-// //         // Store hash in your password DB.
-// //         password = hash;
+app.use(express.json());
 
-// //     })
-// //     .then((password) => {
+//mongodb setup
+mongoose
+  .connect("mongodb://127.0.0.1:27017/bookStore")
+  .then(() => console.log("Connected"));
 
-// //         console.log(password);
-// //         let data = {
-// //             username: username,
-// //             email,
-// //             password,
-// //           };
-// //           console.log(data);
-// //     });
+const Schema = mongoose.Schema;
+const BookSchema = new Schema({
+  title: {
+    type: String,
+    unique: true
+  },
 
-// // //   console.log(password);
+  isbn: Number,
+});
 
-// // }
+const Book = mongoose.model("Book", BookSchema);
 
-// // signup("ram", "ram@gmail.com", "dev123");
-// function print() {
-//     console.log("Hello, World!");
-// }
-// /* named exports */
-// let user = {
-//     username: "Devashish",
-//     password: "Upreti",
-//     print
-// }
+// app.get("/api/books", (req, res) => {
+//   Book.find().then((data) => {
+//     // console.log(data);
+//     res.send(data);
+//   });
+// });
 
-// module.exports = user;
+app.get("/api/books", async (req, res) => {
+  let books = await Book.find();
+  res.send(books);
+})
 
+app.post("/api/books", (req, res) => {
+//   console.log(req.body);
+let {title, isbn} = req.body;
+  Book.create({
+    title,
+    isbn
+  }).then((data) => {
+    console.log(data);
+    res.send(data);
+  })
+  .catch(err => {
+    res.status(400).send(err);
+  });
+});
 
+app.put("/api/books/:id", (req, res) => {
+  let {title, isbn} = req.body;
+  let { id } = req.params;
+  Book.findByIdAndUpdate({_id: id}, {$set: {title, isbn}})
+  .then(()=> {
+    res.send('Updated');
+  })
+  .catch((err) => {
+    res.send(err);
+  });
+});
 
-const express = require('express'); //function is being imported
-const app = express(); //when function in being called the data is being stored in app
-
-app.get('/api/todos', (request, response) => {
-    console.log("Hello, World");
-    let todos = ["html", "css", "js"];
-    response.send(todos);
-}); //This is an api wow
+app.delete("/api/books/:id", (req, res) => {
+  let { id } = req.params;
+  Book.deleteOne({_id: id}).then(() => {
+    res.send({
+      message: `document with id: ${id} successfully deleted`
+    });
+  })
+  .catch((err) => {
+    res.send(err);
+  });
+});
 
 app.listen(8000, () => {
-    console.log("server has started");
+  console.log("Server has successfully started on PORT 8000");
 });

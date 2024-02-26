@@ -77,16 +77,15 @@
 
 // console.log(notTeens);
 
-const x = document.getElementById('x');
-console.log(x);
-let value = false;
+// const x = document.getElementById('x');
+// console.log(x);
+// let value = false;
 
-x.addEventListener('click', function() {
-  value = !value;
-  if(value)
-  x.innerText = 'O';
-  else 
-  x.innerText = 'X';
+// x.addEventListener('click', function() {
+//   value = !value;
+//   if(value)
+//   x.innerText = 'O';
+//   else
+//   x.innerText = 'X';
 
-})
-
+// })

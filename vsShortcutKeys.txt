@@ -13,3 +13,4 @@
 13. ctrl + g => to get search for searching lines
 14. ctrl + l => to select the whole line in vs code
 15. ctrl + shift + k => to delete the selected line or cursored line
+16. ctrl + shift + p => to open the setting bar
